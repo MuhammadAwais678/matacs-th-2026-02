@@ -3,7 +3,7 @@
 **Name:** Muhammad Awais
 **Reference:** MATACS-TH-2026-02
 **Role:** Associate Software Developer
-**Time actually spent:** TODO: 60-minutes
+**Time actually spent:** TODO:20 minutes
 
 ## Files
 
@@ -18,10 +18,10 @@ AI reads messy proposal text and returns structured facts with an evidence quote
 
 ## How I used AI tools
 
-TODO: edit this to match what really happened. Write 2 or 3 sentences. Say which AI tool you used (e.g. Claude) and for what (e.g. first draft of the flow and prompt). You must include at least one real place where you disagreed with or corrected the AI. Example shape: "Claude first suggested letting the AI model calculate the final scores. I changed this so scores come from fixed formulas in code, because the same proposal must always get the same score."
+I used Claude to help draft the process flow, the extraction prompt, the write-up, the diagram and the expected ranking, and I read through the outputs before using them. I disagreed with Claude on Proposal D: Claude flagged it and left it unranked because no timeline was given, but I changed it so D is ranked with a timeline score of 0 and a visible warning. A bid that leaves out its schedule should not get a free pass or disappear from the list, and the reviewer can still ask the bidder.
 
 ## Assumptions
 
 - Experience is counted from what each proposal states, within the 5-year window where dates are given.
 - A mandatory criterion passes only if the proposal states it clearly. "To be confirmed later" counts as a fail.
-- A proposal with missing information on a weighted criterion is flagged for a human, not guessed.
+- A proposal with missing information on a weighted criterion scores 0 for that criterion and shows a warning, not a guess.

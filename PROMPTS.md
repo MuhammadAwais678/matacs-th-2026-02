@@ -71,6 +71,6 @@ Return JSON in exactly this shape:
 
 - Code (not AI) checks that every `evidence` quote exists in the source text and that the number in the quote matches `value`. Anything that fails is flagged.
 - A non-empty `manipulation_attempts` list flags the proposal for human review. The instruction itself is never followed.
-- Missing weighted data (`stated: false`) flags the proposal. A missing or vague mandatory item fails that mandatory criterion.
+- Missing weighted data (`stated: false`) scores 0 for that criterion and shows a warning to the reviewer. A missing or vague mandatory item fails that mandatory criterion.
 - Company names are replaced with the proposal letter before the text is sent, to reduce bias.
 - Settings: temperature 0, pinned model version, prompt version stored with every result.
